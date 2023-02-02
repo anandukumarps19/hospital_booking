@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid">
+    <h2 class="text-center bg-danger p-3 text-white"><b>About Us</b></h2>
+    <h3 class="text-center pt-3">History-Motto-Vision-Mission</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" >
+                    <img class="mt-5 mb-5" src="{% static 'images/caritas.jpg' %}" alt="hospital">
+                </div>
+                    <div class="col-md-8">
+                        <h3 class="text-center mt-5"> STEP IN TO THE WORLD OF GOOD HEALTH AND HAPPINESS...</h3>
+            <p>Welcome to Caritas Hospital, Kottayam, the towering lighthouse of good health and healing in
+            Central Kerala. As modern medical science has turned the dread associated with illnesses a thing
+            of past, Caritas stays committed to leading undreds of our patients to the light of good health
+            and happiness. ‘Kenotic love saves life’ is our motto and we are guided by the spirit of
+            Lord Jesus Christ, who wanted every human being to enjoy the fullness of joy and abundance of life.
+            Our services are centered on holistic care that sustains and improves the health of individuals
+            and communities.Caritas Hospital, run by the Catholic diocese of Kottayam, operates under
+            a registered charitable trust with the registration number 510/IV/95.
+            The hospital is NABH accredited & ISO 9001:2015 certified for quality management
+            system and healthcare procedures. Over the years, Caritas has grown to become one of the best
+            healthcare providers in Central Kerala with 34-plus clinics and departments.
+            We have a well-equipped multi-organ transplantation centre (kidney, heart, lungs and liver).
+            Caritas also stands apart for being one of the hospitals with the highest volume of patients in
+            Central Kerala.</p>
+            <h3 class="text-left p-3 mb-5">Founding Leaders</h3>
+            <img class="mb-5" src="{% static 'images/Bishop.jpg' %}"style="height:200px;" >
+        <img class="mb-5" src="{% static 'images/Archbishop.jpg' %}"style="height:200px;" >
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

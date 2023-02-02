@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+    <h2 class="container-fluid text-center bg-danger p-3 text-white"><b>Contact Us</b></h2>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h3 class="text-left p-3">Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.418143105853!2d76.54730711410872!3d9.645266581689464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07d357f8c1c2b9%3A0xc0d6a0419e0969c0!2sCaritas%20Hospital%20Rd%2C%20Kerala%20686630!5e0!3m2!1sen!2sin!4v1672826363091!5m2!1sen!2sin" width="350" height="250" style="border:1; margin-5"></iframe>
+        </div>
+        <div class="col-md-6">
+            <h3 class="text-left m-3"><b>Feedback</b></h3>
+            <form>
+            <input type="text" class="text-left m-3 w-100" name="name" placeholder="Name">
+            <input type="email" class="text-left m-3 w-100" name="email" placeholder="Email">
+            <input type="number" class="text-left m-3 w-100" name="number" placeholder="Phone Number">
+            <textarea class="text-left w-100 H-50 m-3" placeholder= "Enter your comments "></textarea>
+                <button class=" btn-btn warning text-center m-5 ">Submit</button>
+            <br>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

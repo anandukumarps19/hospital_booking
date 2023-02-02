@@ -1,0 +1,9 @@
+li:hover{
+    font-size:smaller;
+}
+
+slider{
+    width:100%;
+    height:500px;
+    background :url(img1.jpg)
+}

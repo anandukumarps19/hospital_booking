@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="container-fluid text-center bg-info">
+    <h2 class="text-white p-3 bg-danger"><b>Our Doctors</b></h2>
+    {% for i in doct %}
+    <div class="card mx-3 my-3 mb-5"  style="width: 18rem; display:inline-block">
+        <img src="{{i.Doctor_image.url}}" class="card-img-top" alt="image"height="300px">
+        <div class="card-body">
+            <center>
+            <h5 class="card-title">Dr. {{i.Doctor_name}}</h5>
+            <p class="card-text"><small>specialization in </small><br>
+                                {{i.Doctor_spec}}</p>
+                <h6><b>{{i.Department_name}} Department</b></h6>
+            </center>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}
